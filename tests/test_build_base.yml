@@ -1,0 +1,30 @@
+package:
+  git:
+    installed: true
+  openssh-client:
+    installed: true
+command:
+  ansible --version:
+    exit-status: 0
+    stdout:
+    - ansible 2.7.10
+    stderr: []
+    timeout: 10000
+  goss --version:
+    exit-status: 0
+    stdout:
+    - goss version v0.3.6
+    stderr: []
+    timeout: 10000
+  molecule --version:
+    exit-status: 0
+    stdout:
+    - molecule, version 2.20.1
+    stderr: []
+    timeout: 10000
+  docker --version:
+    exit-status: 0
+    stdout:
+    - Docker version 18
+    stderr: []
+    timeout: 10000

@@ -1,0 +1,5 @@
+docker-py
+pymysql
+flask
+flask_script
+flask-mysql
