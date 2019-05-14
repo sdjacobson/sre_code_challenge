@@ -17,9 +17,11 @@ In order to faclitate local development we want to create 2 docker containers.  
 
 Define the architecture in AWS that would best support this platform.  During your code review be prepared to discuss your choices and why you believe they are the best approach.
 
-# Bonus 
+# Bonus
 
 Create a CI/CD pipeline that will build, version/tag, and deploy the flask container into an ECS cluster in AWS.  You can use AWS Developer Tools or Jenkins as you see fit.
 
 
 
+# Notes
+docker exec database /bin/sh -c 'mysql -u appuser -pappuser < /docker-entrypoint-initdb.d/db_seed.sql'
